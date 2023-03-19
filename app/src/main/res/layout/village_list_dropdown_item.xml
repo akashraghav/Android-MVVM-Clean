@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:padding="6dp"
+    android:background="@drawable/rounded_8dp"
+    android:backgroundTint="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:text="Jupiter" />

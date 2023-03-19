@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Market</string>
+    <string name="sell_my_produce">Sell My Produce</string>
+    <string name="sell_more">Sell More</string>
+    <string name="market">Market</string>
+    <string name="john_doe">RAMU KAKA</string>
+    <string name="seller_name">Seller Name *</string>
+    <string name="loyalty_card_identifier">Loyalty card identifier</string>
+    <string name="tonnes">Tonnes</string>
+    <string name="city">City</string>
+    <string name="gross_weight">Gross Weight *</string>
+    <string name="gross_price_filled">Gross Price(%1$s/Ton)</string>
+    <string name="gross_price">Gross Price</string>
+    <string name="price_format">%1$s INR</string>
+    <string name="price_factor_format">Applied loyalty index : %1$s</string>
+    <string name="id_hint">S1000</string>
+    <string name="weight_hint">20</string>
+    <string name="fill_mandatory_fields">Please fill mandatory fields, marked with asterisk(*).</string>
+    <string name="ensure_values">Please ensure you received %1$s INR for %2$s Tonnes your produce.</string>
+    <string name="failed_to_load">Failed to load Inputs!</string>
+    <string name="retry">Retry</string>
+    <string name="thank_you_seller">Thank you %1$s for selling your quality produce</string>
+
+    <string-array name="dummy_data">
+        <item>Shimla</item>
+        <item>Manali</item>
+        <item>Kasol</item>
+    </string-array>
+</resources>

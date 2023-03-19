@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.resultview.SaleSuccessFragment">
+
+    <ImageView
+        android:id="@+id/fruitImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fruits" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/thank_you_text"
+        app:layout_constraintTop_toBottomOf="@id/fruitImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:text="Thank you Seller for selling your quality produce" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ensure_values_text"
+        app:layout_constraintTop_toBottomOf="@id/thank_you_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:text="Please ensure you received 20000.02 INR for 23 Tonnes your produce." />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sellMoreCta"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sell_more"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_8dp"
+        android:backgroundTint="@color/primary_green"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

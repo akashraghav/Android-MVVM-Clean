@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    compileSdk 33
+
+    def localProperties = new Properties()
+    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+    defaultConfig {
+        applicationId "com.raghav.market"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        test {
+            resources.srcDirs += ['src/test/resources']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.kotlinCore
+    implementation libs.kotlinStdLib
+
+    implementation libs.appCompat
+    implementation libs.material
+    implementation libs.constraintLayout
+    implementation libs.recyclerView
+    implementation libs.fragment2
+    implementation libs.navigationapi
+    implementation libs.navigationui
+    implementation libs.glide
+
+    implementation libs.retrofit
+    implementation libs.okhttpLogging
+    implementation libs.gson
+    implementation libs.gsonConverter
+    implementation libs.hilt
+    kapt libs.hiltCompiler
+
+    testImplementation libs.junit
+    testImplementation libs.googletruth
+    androidTestImplementation libs.junit
+    androidTestImplementation libs.junitExt
+    testImplementation libs.coreTesting
+    testImplementation libs.mockk
+    androidTestImplementation libs.mockkAndroid
+    testImplementation libs.mockwebserver
+    testImplementation libs.kotlinCoroutinesTest
+    androidTestImplementation libs.kotlinCoroutinesTest
+
+    androidTestImplementation libs.androidXTest
+    androidTestImplementation libs.androidXTestExtensions
+    androidTestImplementation libs.androidXTestKotlin
+    androidTestImplementation libs.androidJUnitRunner
+    androidTestImplementation libs.androidJUnitRules
+    androidTestImplementation libs.espresso
+}
