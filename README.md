@@ -11,7 +11,9 @@ tonne. A loyalty factor would be applied on the final price that would `0.98` fo
 sellers and `1.12` for registered ones if they insert their loyalty ids. Also, if the seller is
 registered, the loyalty id will be filled automatically and vice versa. The cities list with their
 fixed prices and registered sellers is received by calling apis :
+>
 sellers- https://gist.githubusercontent.com/akashraghav/6a614790ee36c699a2f344b90025caeb/raw/cb0cb2cf4bea01185e7dbfd37f23f5d6375600c7/sellers.json
+>
 cities- https://gist.githubusercontent.com/akashraghav/6a614790ee36c699a2f344b90025caeb/raw/cb0cb2cf4bea01185e7dbfd37f23f5d6375600c7/cities.json
 
 ## Code Structure
@@ -35,7 +37,7 @@ C --> D
 ## Code changes/requests
 
 For Changes you create an issue, or open pull requests.
-For any suggestions, please send a [Tweet]{https://twitter.com/metalheadakki}.
+For any suggestions, please send a [Tweet](https://twitter.com/metalheadakki).
 
 Also Do leave a star to let me know if this was helpful.
 
