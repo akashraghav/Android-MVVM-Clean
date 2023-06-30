@@ -36,7 +36,7 @@ C --> D
 
 ## Code changes/requests
 
-For Changes you create an issue, or open pull requests.
+For Changes you can create an issue, or open pull requests.
 For any suggestions, please send a [Tweet](https://twitter.com/metalheadakki).
 
 Also Do leave a star to let me know if this was helpful.
